@@ -2,12 +2,11 @@ class TWhisper < Formula
   desc "本機離線中文語音轉錄 CLI（whisper.cpp + sherpa-onnx，繁體輸出）"
   homepage "https://github.com/sssuperman/T-Whisper"
   url "https://github.com/sssuperman/T-Whisper/releases/download/v1.1.0/t-whisper"
-  version "1.1.0"
   sha256 "4170214257121723d817a96c4ae08eea6132ebe05fa402f9596ce3247682072e"
   license "MIT"
 
-  depends_on "opencc"
   depends_on :macos
+  depends_on "opencc"
 
   def install
     bin.install "t-whisper"
